@@ -1,0 +1,304 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    
+    background-image: url(./assets/images/background-desktop.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container{
+    margin:10px;
+    text-align: center;
+    background-color: antiquewhite;
+    width: 600px;
+    height: 600px;
+    color: white;
+    background: transparent;
+}
+
+.container-cod{
+    width: 150px;
+}  
+
+
+
+h1{
+    word-spacing: 10px;
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: xx-large;
+    
+    
+    
+}
+h6::before{
+    content: url(./assets/images/logo-mark.svg);
+    display: inline-block;
+    /* width: 1px;
+    height: 1px; */
+    
+   
+}
+p{
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: smaller;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 35px;
+    
+
+    
+}
+
+input{
+    width: calc(100% - 250px);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: rgba(60, 40, 100, 0.7);
+    height: 30px;
+    border: 1px solid rgb(181, 175, 175);
+    padding-left: 7px;
+    font-size: 12px;
+    color: white;
+    font-style: normal;
+    
+    
+}
+input:focus{
+    outline: none;
+    border:2px solid #8a2be2;
+    box-shadow: 0 0 8px #8a2be2;
+}
+
+.fullname{
+    height: 35px;
+    font-size: medium;
+}
+
+img{
+    background: none;
+    width: 50px;
+    height: 50px;
+}
+.avatar{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}  
+.avatar p{
+    margin: 0px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: small;
+    
+    color: white;
+}
+
+form p{
+    font-size: x-small;
+    font-style: normal;
+    color: grey;
+    margin-top: 0px;
+}
+
+button{
+    width: calc(100% - 250px);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: small;
+    cursor: pointer;
+    background-color: #FF8C69;
+
+}
+
+
+
+
+
+label{
+    margin-bottom: 5px;
+    font-size: small;
+    font-weight: 100;
+    font-style: normal;
+    
+    
+}
+
+label[for="Avatar"]{
+    margin-right: 47%;
+
+
+}
+
+label[for="upload"]{
+    background-color: rgba(60, 40, 100, 0.7);
+    text-align: center;
+    width: calc(100% - 250px);
+    height: 90px;
+    border: 1px dashed rgba(181, 175, 175);
+    border-radius: 8px;
+}
+label[for="full name"]{
+    margin-right: 50%;
+    margin-top: 15px;
+
+}
+label[for="email"]{
+    margin-right: 46%;
+
+}
+label[for="github"]{
+    margin-right: 43%;
+
+}
+
+.classerror{
+    color: red;
+    margin-top: 0%;
+    margin-right: 30%;
+    margin-bottom: 8px;
+    font-size: x-small;
+}
+
+
+/** Dynamic page css has started from here**/
+
+
+
+
+
+.ticket-container{
+    
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    color: white;
+}
+
+.ticket-h6{
+    font-family: Oswald;
+    font-size: medium;
+    margin-bottom: 20px;
+    margin-top: 10px;
+ 
+}
+
+.ticket-h1{
+    font-family: 'Roboto', sans-serif;
+    
+    color: #333; /* Fallback color for older browsers */
+    background: linear-gradient(45deg, #eb2721, #e88978);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bolder;
+    font-size: 40px;
+    
+}
+
+.ticket-h1::before{
+    content: "Congrats,  ";
+    color: white;
+    
+}
+
+.ticket-p{
+    margin-top: 0px;
+    font-size: small;
+    color: #ccc;
+    word-spacing: 3px;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    margin-top: 80px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.image-text {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+     /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.image-avatar{
+    position:absolute;
+    top: 75%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.image-avatar img{
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+.image-name{
+    position: absolute;
+    bottom: 15%;
+    left: 22%;
+}
+.image-name span{
+    font-family: 'Roboto', sans-serif;
+   
+    color: white; /* Adjust the color as needed */
+    
+    font-size:larger;
+} 
+
+.image-name p{
+    
+    font-size:x-small;
+}
+
+.ticket-logo::before{
+    content: url(./assets/images/logo-full.svg);
+}
+
+.ticket-github{
+    margin-top: 8px;
+    color: #ccc;
+}
+
+
+
+
